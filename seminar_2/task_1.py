@@ -3,10 +3,8 @@ from random import randint, random
 
 
 n = int(input('number: '))
-i = 0
 array = []
-while(i < n):
-    a = randint(-100,100)
+for i in range(n):
+    a = (-3)**i
     array.append(a)
-    i = i+1
-print (array)
+print (*array, sep=', ')
