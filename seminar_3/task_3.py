@@ -1,9 +1,6 @@
-some_list = input('введите строки через запятую: ').split(',')
-print(some_list)
-n = str(input('введите искомое значение: '))
-s_count = 0
-for i in some_list:
-    if i == n:
-        s_count  += 1
-    elif s_count == 2:
-        print(some_list[i].index)
+some_list = [input() for _ in range(int(input('Введите кол-во элементов: ')))]
+some_str = input('Введите строку: ')
+try:
+    print(some_list.index(some_str, some_list.index(some_str) + 1))
+except:
+    print(-1)
