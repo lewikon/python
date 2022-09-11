@@ -1,6 +1,3 @@
-from operator import index
-
-
 some_list = [input() for _ in range(int(input('Введите кол-во элементов: ')))]
 print(some_list)
 summa = 0
